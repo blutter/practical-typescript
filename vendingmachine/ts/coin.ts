@@ -22,3 +22,21 @@ class Dime extends Coin {
         return "img/Dime.png";
     }
 }
+
+class Half extends Coin {
+    constructor() {
+        super(.50);
+    }
+    getImageUrl(): string {
+        return "img/Half.png";
+    }
+}
+
+class Dollar extends Coin {
+    constructor() {
+        super(1.0);
+    }
+    getImageUrl(): string {
+        return "img/Dollar.jpg";
+    }
+}
