@@ -1,36 +1,36 @@
-/// <reference path="productCategory.ts" />
+import * as categories from "./productCategory";
 
-interface Product {
+export interface Product {
     name: string;
     price: number;
-    category?: ProductCategory
+    category?: categories.ProductCategory
 }
 
-class Initial implements Product {
+export class Initial implements Product {
     name = "Please select a product";
     price = 0;
 }
 
-class CocaCola implements Product {
+export class CocaCola implements Product {
     name = "Coco-Cola";
     price = 2.30;
-    category = new SodaCategory();
+    category = new categories.SodaCategory();
 }
 
-class Chips implements Product {
+export class Chips implements Product {
     name = "Chips";
     price = 1.20;
-    category = new ChipsCategory();
+    category = new categories.PotatoChipsCategory();
 }
 
-class Nuts implements Product {
+export class Nuts implements Product {
     name = "Nuts";
     price = 1.50;
-    category = new NutsCategory();
+    category = new categories.NutsCategory();
 }
 
-class CandyBar implements Product {
+export class CandyBar implements Product {
     name = "CandyBar";
     price = 1.75;
-    category = new CandyCategory();
+    category = new categories.CandyCategory();
 }

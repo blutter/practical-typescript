@@ -32,3 +32,5 @@ class ChipsCategory extends ProductCategory {
         return this.imgPath + "Chips.png";
     }
 }
+
+export { ProductCategory, SodaCategory, CandyCategory, NutsCategory, ChipsCategory as PotatoChipsCategory };
